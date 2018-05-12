@@ -99,6 +99,13 @@ class Album extends Component {
         
     }
     
+    formatTime(s) {
+        const seconds = Math.floor(s);
+        const minutes = Math.floor(seconds/ 60);
+        const secondsRemainder = seconds % 60;
+        const timeFormatted = minutes + ':' + secondsRemainder;
+    }
+    
     
     render() {
         return (
@@ -131,7 +138,7 @@ class Album extends Component {
                                             </button>
                                             </td>
                                             <td className="song-title">{song.title}</td>
-                                            <td className="song-duration">{song.duration}</td>
+                                            <td className="song-duration">{this.formatTime(song.duration)}</td>
                                             </tr>
                 )}
                 </tbody>
@@ -146,6 +153,7 @@ class Album extends Component {
                 handlePrevClick={() => this.handlePrevClick()}
                 handleNextClick={() => this.handleNextClick()}
                 handleTimeChange={(e) => this.handleTimeChange(e)}
+                formatTime={(e) => this.formatTime(e)}
                 handleVolumeChange={(e) => this.handleVolumeChange(e)}
                 />
                 </section>
