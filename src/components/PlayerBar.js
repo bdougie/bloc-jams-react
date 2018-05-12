@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Ionicon from 'react-ionicons'
+
 
 class PlayerBar extends Component {
     render() {
