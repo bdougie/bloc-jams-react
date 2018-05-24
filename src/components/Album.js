@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
 import '.././styles/album.css';
+import '.././styles/player_bar.css';
 
 class Album extends Component {
     constructor(props) {
@@ -134,9 +135,9 @@ class Album extends Component {
                   <col id="song-title-column" />
                   <col id="song-duration-column" />
                   </colgroup>
-                  <tbody>
+                  <tbody className = "album-table">
                 {this.state.album.songs.map( (song,index) =>
-                                            <tr className="song" key={index} onClick={() => this.handleSongClick(song)} >
+                                            <tr className="song-table" key={index} onClick={() => this.handleSongClick(song)} >
                                             <td className="song-actions">
                                             <button>
                                             <span className="song-number">{index+1}</span>
