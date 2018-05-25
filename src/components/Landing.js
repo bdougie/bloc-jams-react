@@ -1,6 +1,8 @@
 import React from 'react';
 import '.././styles/landing.css';
-//import image from '../assets/images/bloc_jams_logo.png';
+import '.././styles/main.css';
+import '.././styles/normalize.css';
+
 
 
 const Landing = () => (

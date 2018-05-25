@@ -52,7 +52,7 @@
     font-size: 1rem;
 }
 
-.song-table {
+.album-table {
     color: white;
 }
 
@@ -82,7 +82,7 @@
     width: 5%;
 }
 
-.album-song-button {
+.song-actions {
     text-align: center;
     font-size: 14px;
     background-color: white;
@@ -94,13 +94,13 @@
 }
 
 
-.album-song-button:hover {
+.song-actions:hover {
     cursor: pointer;
     color: white;
     background-color: rgb(210, 40, 123);
 }
 
-.album-song-button span {
+.song-actions span {
     line-height: 28px;
 }
 
